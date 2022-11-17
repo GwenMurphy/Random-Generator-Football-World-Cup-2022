@@ -1,5 +1,5 @@
 """
-The idea is to have a list of people who entered into the office sweepstakes; plus a list of teams that are participaitng in the World Cup.
+The idea is to have a list of people who entered into the office sweepstakes; plus a list of teams that are participating in the World Cup.
 
 The plan is to have a random person match to a random team, before said person/team are removed from the arrays so they're not chosen again.
 For this, the lengths of both arrays must be equal.
