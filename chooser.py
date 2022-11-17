@@ -55,8 +55,8 @@ countries = [   ##### There are 32 countries taking part in the World Cup.
 ##### occurred due to unequal array lengths. Bossman, as soon as you find that list, can you amend
 ##### the below array w/ who is in the sweepstakes and pull a merge request?
 #####
-##### I don't know who is doing the frontend yet, and right now I am not sure how it'll even be
-##### done. Whowever it is, adding in commenting will make things easier and quicker to complete.
+##### I am not sure right now how the frontend is going to be done, let alone how it will look.
+##### Regardless of who does what, adding in commenting will make things easier and quicker to complete.
 ##### I know you've seen the code for that Twitter bot too and the commenting I added onto that.
 #####
 ##### I'm thinking that it would be hosted in GitHub pages. It'll have to be a subpage of the GitHub
@@ -120,9 +120,9 @@ names = [
 
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
 ##### The function itself - the guts of the program. It's much better than paper      #####
-##### in tupperware. Bossman mentioned a backend in React, though who is doing it     #####
-##### and how it'll be done is anyone's guess right now. All I'm establishing right   #####
-##### now is that it will be hosted on GitHub pages.                                  #####
+##### in tupperware. Bossman mentioned a backend in React, though how it'll be done   #####
+##### is anyone's guess right now. All I'm establishing right now is that it will be  #####
+##### hosted on GitHub pages.                                                         #####
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
 
 def assignTeamToPerson():
