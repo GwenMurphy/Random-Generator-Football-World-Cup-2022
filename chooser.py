@@ -8,6 +8,12 @@ For this, the lengths of both arrays must be equal.
 import random
 import time
 
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+##### There are two arrays below. One is for the list of countries, and #####
+##### the other is for the list of names. The arrays lengths must be    #####
+##### equal to prevent errors.                                          #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
+
 countries = [   ##### There are 32 countries taking part in the World Cup.
     'Argentina',
     'Australia',
@@ -42,6 +48,26 @@ countries = [   ##### There are 32 countries taking part in the World Cup.
     'United States',
     'Wales'
 ]
+
+##### Dave seems to have hidden the list that contains the names of those taking part in the
+##### sweepstakes. I typed down the 4 I could remember, but I needed 32, so the other 28 have
+##### been MacGyver'd, essentially. This was done to prevent errors when it ran which would have
+##### occurred due to unequal array lengths. Bossman, as soon as you find that list, can you amend
+##### the below array w/ who is in the sweepstakes and pull a merge request?
+#####
+##### I don't know who is doing the frontend yet, and right now I am not sure how it'll even be
+##### done. Whowever it is, adding in commenting will make things easier and quicker to complete.
+##### I know you've seen the code for that Twitter bot too and the commenting I added onto that.
+#####
+##### I'm thinking that it would be hosted in GitHub pages. It'll have to be a subpage of the GitHub
+##### site that's already there and it may need to be iframe'd in HTML so it displays on the page,
+##### but I think I can do that bit.
+#####
+##### I've already put together a page in which it will be on, though given you've seen my GitHub profile,
+##### it isn't hard to guess you've found it. It's the one with a random picture of a kitten. It will be
+##### iframe'd where that picture currently is. Just needed something to fill the page in the meantime.
+#####
+##### <iframe src="{direct link to the random generator frontend}" title="Random Generator"></iframe>
 
 names = [
     'Will',
@@ -89,12 +115,15 @@ names = [
 ##### ##### ##### #### ^^ What Windows Vista does a tremendously piss-poor job of doing in any scenario.
 
 ##### Боже мой, that's it! GitHub pages! It can be hosted there!
-##### https://gwenmurphy.github.io/{this thing}
+##### https://gwenmurphy.github.io/projects/Random-Generator/
 
 
-
-countrylist = range(len(countries))
-namelist = range(len(names))
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
+##### The function itself - the guts of the program. It's much better than paper      #####
+##### in tupperware. Bossman mentioned a backend in React, though who is doing it     #####
+##### and how it'll be done is anyone's guess right now. All I'm establishing right   #####
+##### now is that it will be hosted on GitHub pages.                                  #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
 
 def assignTeamToPerson():
     for i in range(0, len(countries)):
@@ -127,4 +156,7 @@ def assignTeamToPerson():
         print(f'{len(countries)} left to choose...')        
 
 
+##### Triggers the function and blows Dave's comparatively Flintstonian method involving tupperware,
+##### paper and a bit of luck out of the water, a bit like the Six Nations match on February 17th,
+##### 2001 in which England flattened Italy 80-23.
 assignTeamToPerson()
