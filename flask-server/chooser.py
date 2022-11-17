@@ -3,6 +3,12 @@ The idea is to have a list of people who entered into the office sweepstakes; pl
 
 The plan is to have a random person match to a random team, before said person/team are removed from the arrays so they're not chosen again.
 For this, the lengths of both arrays must be equal.
+
+-----
+Addendum: a place has been made for the frontend to go. You'll notice the "index.html" file on the repo when you access it. I've added some text
+into it so it's not empty. Here's the link:
+
+https://gwenmurphy.github.io/Random-Generator-Football-World-Cup-2022/
 """
 
 import random
@@ -121,6 +127,22 @@ def assignTeamToPerson():
     'That one meme bouncing round Will\'s head right now like the DVD logo'
     ]
 
+<<<<<<< HEAD:flask-server/chooser.py
+=======
+]
+
+##### Frontend using React
+##### ##### ##### #### ^^ What Windows Vista does a tremendously piss-poor job of doing in any scenario.
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
+##### The function itself - the guts of the program. It's much better than paper      #####
+##### in tupperware. Bossman mentioned a backend in React, though how it'll be done   #####
+##### is anyone's guess right now. All I'm establishing right now is that it will be  #####
+##### hosted on GitHub pages.                                                         #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
+
+def assignTeamToPerson():
+>>>>>>> b43f97330828f98bd0a23f18148f60c5465b3d7d:chooser.py
     for i in range(0, len(countries)):
         ##### Shuffles them every time so nobody knows who gets what team.
         ##### Yes, it shuffles every time. Odds of getting what you want
