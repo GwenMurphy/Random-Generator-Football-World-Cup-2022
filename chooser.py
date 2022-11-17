@@ -3,6 +3,12 @@ The idea is to have a list of people who entered into the office sweepstakes; pl
 
 The plan is to have a random person match to a random team, before said person/team are removed from the arrays so they're not chosen again.
 For this, the lengths of both arrays must be equal.
+
+-----
+Addendum: a place has been made for the frontend to go. You'll notice the "index.html" file on the repo when you access it. I've added some text
+into it so it's not empty. Here's the link:
+
+https://gwenmurphy.github.io/Random-Generator-Football-World-Cup-2022/
 """
 
 import random
@@ -113,10 +119,6 @@ names = [
 
 ##### Frontend using React
 ##### ##### ##### #### ^^ What Windows Vista does a tremendously piss-poor job of doing in any scenario.
-
-##### Боже мой, that's it! GitHub pages! It can be hosted there!
-##### https://gwenmurphy.github.io/projects/Random-Generator/
-
 
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
 ##### The function itself - the guts of the program. It's much better than paper      #####
