@@ -1,0 +1,4 @@
+/client/node_modules
+/flask-server/__pycache__
+/flask-server/venv
+chooser.py

@@ -14,7 +14,24 @@ import time
 ##### equal to prevent errors.                                          #####
 ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #####
 
-countries = [   ##### There are 32 countries taking part in the World Cup.
+
+##### Frontend using React
+##### ##### ##### #### ^^ What Windows Vista does a tremendously piss-poor job of doing in any scenario.
+
+##### Боже мой, that's it! GitHub pages! It can be hosted there!
+##### https://gwenmurphy.github.io/projects/Random-Generator/
+
+
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
+##### The function itself - the guts of the program. It's much better than paper      #####
+##### in tupperware. Bossman mentioned a backend in React, though how it'll be done   #####
+##### is anyone's guess right now. All I'm establishing right now is that it will be  #####
+##### hosted on GitHub pages.                                                         #####
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
+
+def assignTeamToPerson():
+    drawnList = []
+    countries = [   ##### There are 32 countries taking part in the World Cup.
     'Argentina',
     'Australia',
     'Belgium',
@@ -47,7 +64,7 @@ countries = [   ##### There are 32 countries taking part in the World Cup.
     'Uruguay',
     'United States',
     'Wales'
-]
+    ]
 
 ##### Dave seems to have hidden the list that contains the names of those taking part in the
 ##### sweepstakes. I typed down the 4 I could remember, but I needed 32, so the other 28 have
@@ -69,63 +86,41 @@ countries = [   ##### There are 32 countries taking part in the World Cup.
 #####
 ##### <iframe src="{direct link to the random generator frontend}" title="Random Generator"></iframe>
 
-names = [
+    names = [
     'Will',
     'Dave B',
     'Alan',
     'Sophie K',
     'Octavia',
-
     'Luna',
     'Worf, son of Mogh',
     'Claire Redfield',
     'McLovin',
     'Arnold Rimmer',
-    
     'Dave Lister',
     'Del Boy',
     'Davros',
     'Daenerys Targaryen',
     'Tywin Lannister',
-
     'Tyrion Lannister',
     'Luna Lovegood',
     'Seven of Nine',
     'The cat behind you that\'s staring into your soul',
     'The guy who created Zombocom',
-
     'Taylor Swift',
     'Don Corleone',
     'Al Capone',
     'The RICOH MP C6004 that exists to torment Will',
     'thingy',
-
     'Janet\'s butler, Barry,',
     'The joke that is the level of maintenance in this building',
     'Doug Dimmadome, owner of the Dimmsdale Dimmadome',
     'fre sh a voca do',
     'Yeetus Maximus',
-
     'Shuri',
     'That one meme bouncing round Will\'s head right now like the DVD logo'
+    ]
 
-]
-
-##### Frontend using React
-##### ##### ##### #### ^^ What Windows Vista does a tremendously piss-poor job of doing in any scenario.
-
-##### Боже мой, that's it! GitHub pages! It can be hosted there!
-##### https://gwenmurphy.github.io/projects/Random-Generator/
-
-
-##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
-##### The function itself - the guts of the program. It's much better than paper      #####
-##### in tupperware. Bossman mentioned a backend in React, though how it'll be done   #####
-##### is anyone's guess right now. All I'm establishing right now is that it will be  #####
-##### hosted on GitHub pages.                                                         #####
-##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ###### ##### ###### ##### #####
-
-def assignTeamToPerson():
     for i in range(0, len(countries)):
         ##### Shuffles them every time so nobody knows who gets what team.
         ##### Yes, it shuffles every time. Odds of getting what you want
@@ -135,13 +130,13 @@ def assignTeamToPerson():
         
         ##### Sets a timer so the output is not zerg-rushed.
         ##### Yes, I know you understand that reference.
-        time.sleep(2)
+        # time.sleep(2)
         
         ##### Randomly assigns a country to a person. Doesn't look random, but it's shuffled
         ##### every time it loops. Any more shuffling and the Goonies will be summoned.
         randomPerson = names[0]
         randomTeam = countries[0]
-        print(f'May the odds be ever in your favour. Here\'s number {i+1}! {randomPerson} gets {randomTeam}!')
+        drawnList.append(f'May the odds be ever in your favour. Here\'s number {i+1}! {randomPerson} gets {randomTeam}!')
         ##### Yes, that's a Hunger Games reference.
 
         ##### Accounting for specific circumstances.
@@ -153,10 +148,10 @@ def assignTeamToPerson():
         ##### Removes what was just printed from the list.
         countries.pop(0)
         names.pop(0)
-        print(f'{len(countries)} left to choose...')        
+        # print(f'{len(countries)} left to choose...')
+    return drawnList
 
 
 ##### Triggers the function and blows Dave's comparatively Flintstonian method involving tupperware,
 ##### paper and a bit of luck out of the water, a bit like the Six Nations match on February 17th,
 ##### 2001 in which England flattened Italy 80-23.
-assignTeamToPerson()
