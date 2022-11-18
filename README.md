@@ -8,7 +8,7 @@ Naturally, the IT Department overheard, and now here we are. I'm automating it i
 
 - Run `npm install` in the client folder
 - Run `python3 -m venv venv` in the flask-server folder
-- Run `venv/bin/activate` in the flask-server folder
+- Run `source venv/bin/activate` in the flask-server folder
 - run `pip3 install Flask` in the flask-server folder
 - run `python3 server.py` in the flask-server folder
 - run `npm start` in the client folder
